@@ -1,0 +1,129 @@
+Dear Simanta,
+
+Thank you for your interest in webarcitech. As discussed, Below you will find the assignment for the react role applied:
+
+Objective:
+Develop a React application that serves as an AI insights dashboard with a focus on front-end design and user interaction. The dashboard will display data fetched from a mock AI service and present it in a visually appealing and interactive manner.
+
+Task Overview:
+Create a single-page application that visualizes AI data through interactive charts and graphs. The application will fetch data from a mock AI service (simulated with a provided JSON file) and display it using a modern and intuitive UI.
+
+Requirements:
+
+1. Application Setup:
+   - Initialize the project using Create React App.
+   - Set up the application to use TypeScript.
+
+2. Mock AI Service Integration:
+   - Use the provided ai-data.json file to simulate fetching data from an AI service.
+   - Implement mock API calls to retrieve the data.
+
+3. Data Visualization:
+   - Use a chart library (e.g., Chart.js or Recharts) to visualize the data from the ai-data.json.
+   - Create at least two different types of interactive charts (e.g., bar chart for category distribution, line chart for trends over time).
+
+4. State Management:
+   - Implement Redux to manage the application state.
+   - Ensure proper actions and reducers are set up to handle the state of the AI data.
+
+5. Styling and Layout:
+   - Use CSS3 and a preprocessor like SASS/LESS to style the application.
+   - Ensure the layout is clean, modern, and the UI is responsive.
+
+6. Frontend Design:
+   - Design a user-friendly interface that allows easy interaction with the data.
+   - Implement a theme that is consistent across all components.
+
+7. Video Recording:
+   - Record a video walkthrough of the functioning dashboard.
+   - Explain the design choices and interactions as you demonstrate the features.
+
+8. **Documentation:
+   - Provide comments and documentation within the code to explain your logic.
+   - Include a README.md file with setup instructions, a brief explanation of the application, and a link to the video walkthrough.
+
+Evaluation Criteria:
+- Code quality, readability, and use of best practices.
+- Correct implementation of state management with Redux.
+- Effective use of TypeScript for type-checking.
+- Design and implementation of the data visualization components.
+- Responsiveness and aesthetic appeal of the UI.
+- Quality of the video walkthrough and the candidate's ability to explain their work.
+- Completeness and clarity of documentation.
+
+Submission Instructions:
+- Push your code to a GitHub repository and provide the repository link.
+- Upload the video walkthrough to a platform like YouTube or Vimeo and include the link in your README.md.
+- Ensure the application can be easily set up and run locally from the repository.
+
+Notes for the Candidate:
+- Focus on both functionality and design. The dashboard should not only work well but also look professional and be intuitive to use.
+- The video walkthrough is your chance to showcase the application and explain your technical decisions. Be clear and concise in your explanations.
+- You are not required to connect to a live AI service; the provided JSON file will serve as your data source.
+
+Json
+
+Requesting you to please find the Json file attached below:
+
+{
+  "insight_summary": {
+    "total_queries": 1500,
+    "successful_queries": 1350,
+    "failed_queries": 150,
+    "average_response_time": 0.45
+  },
+  "category_distribution": {
+    "small_talk": 300,
+    "technical_support": 450,
+    "sales_inquiries": 350,
+    "customer_service": 400
+  },
+  "response_times": {
+    "day_wise": [
+      {"date": "2023-05-01", "average_time": 0.4},
+      {"date": "2023-05-02", "average_time": 0.42},
+      {"date": "2023-05-03", "average_time": 0.35},
+      {"date": "2023-05-04", "average_time": 0.5},
+      {"date": "2023-05-05", "average_time": 0.47}
+    ],
+    "week_wise": [
+      {"week": "18", "average_time": 0.45},
+      {"week": "19", "average_time": 0.43},
+      {"week": "20", "average_time": 0.5},
+      {"week": "21", "average_time": 0.46},
+      {"week": "22", "average_time": 0.41}
+    ]
+  },
+  "user_satisfaction": {
+    "ratings": [
+      {"rating": 1, "count": 15},
+      {"rating": 2, "count": 35},
+      {"rating": 3, "count": 200},
+      {"rating": 4, "count": 500},
+      {"rating": 5, "count": 600}
+    ]
+  },
+  "usage_statistics": {
+    "by_platform": {
+      "iOS": 600,
+      "Android": 700,
+      "Web": 200
+    },
+    "by_country": {
+      "USA": 800,
+      "India": 250,
+      "Germany": 150,
+      "Japan": 100,
+      "Brazil": 200
+    }
+  }
+}
+
+This mock data can be used to:
+Create a bar chart for the category_distribution to show the number of queries per category.
+Display a line chart for response_times to demonstrate trends over time on a daily and weekly basis.
+Use a pie chart or bar graph to represent user_satisfaction based on ratings.
+Represent usage_statistics through different types of charts to show the distribution by platform and country.
+Candidates can fetch this mock data as if it were from an AI service API and use it to demonstrate their front-end development and design skills in React, employing libraries like Redux for state management and Recharts or Chart.js for data visualization
+
+Timeline : 24hrs (kindly share it back to us by Saturday 24/2/2024 at 12 noon)

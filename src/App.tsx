@@ -1,14 +1,14 @@
 // import { useState } from "react";
 
 import "./App.css";
+import BarChartDisplay from "./components/BarChat";
 
+import { apiData } from "./data";
 function App() {
-  // const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1 className="underline">React</h1>
-    </>
+    <div>
+      <BarChartDisplay data={apiData.category_distribution} />
+    </div>
   );
 }
 
