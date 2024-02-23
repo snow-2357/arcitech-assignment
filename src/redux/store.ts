@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import counterReducer from "./categorySlice";
+import categoryReducer from "./categorySlice";
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
-  counter: counterReducer,
+  categoryOrder: categoryReducer,
 });
 
 const store = configureStore({
