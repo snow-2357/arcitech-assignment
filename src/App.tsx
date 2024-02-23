@@ -2,15 +2,15 @@
 
 import "./App.css";
 import BarChartWrapper from "./components/BarChartWrapper";
-import LineChartDisplay from "./components/Charts/LineChart";
 import PieChartDisplay from "./components/Charts/PieChart";
+import LineChartWrapper from "./components/LineChartWrapper";
 
 import { apiData } from "./data";
 function App() {
   return (
     <div>
       <BarChartWrapper />
-      <LineChartDisplay data={apiData.response_times.week_wise} />
+      <LineChartWrapper />
       <PieChartDisplay data={apiData.user_satisfaction.ratings} />
     </div>
   );

@@ -20,12 +20,13 @@ interface WeekWiseData {
 }
 type LineChartProps = {
   data: DayWiseData[] | WeekWiseData[];
+  xAxisKey: string;
 };
 
-const LineChartDisplay: React.FC<LineChartProps> = ({ data }) => {
+const LineChartDisplay: React.FC<LineChartProps> = ({ data, xAxisKey }) => {
   return (
     <LineChart width={600} height={300} data={data}>
-      <XAxis dataKey="date" />
+      <XAxis dataKey={xAxisKey} />
       <YAxis />
       <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
       <Tooltip />
