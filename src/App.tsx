@@ -2,7 +2,7 @@
 
 import "./App.css";
 import BarChartDisplay from "./components/BarChart";
-import DropDownComponent from "./components/Dropdown";
+import BarFilter from "./components/BarFilter";
 import LineChartDisplay from "./components/LineChart";
 import PieChartDisplay from "./components/PieChart";
 // import { useSelector, useDispatch } from "react-redux";
@@ -15,7 +15,7 @@ function App() {
   // const dispatch = useDispatch();
   return (
     <div>
-      <DropDownComponent />
+      <BarFilter />
       <BarChartDisplay data={apiData.category_distribution} />
 
       <LineChartDisplay data={apiData.response_times.week_wise} />
