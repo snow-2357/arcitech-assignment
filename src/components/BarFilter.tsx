@@ -25,7 +25,6 @@ const BarFilter: React.FC = () => {
 
   return (
     <div className="">
-      {order}
       <div className="flex items-center gap-4 mb-4 mx-12">
         <input
           checked={orderValue === 1}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
-import { RootState } from "../redux/store";
+import { RootState } from "../../redux/store";
 
 interface BarChartProps {
   data: { [key: string]: number };
@@ -29,10 +29,11 @@ const BarChartDisplay: React.FC<BarChartProps> = ({ data }) => {
         [...chartData].sort((a, b) => a.name.localeCompare(b.name))
       );
   }, [order, data]);
+  console.log(sortedChartData);
 
   return (
     <BarChart width={600} height={300} data={sortedChartData}>
-      <XAxis dataKey="name" stroke="#000" />
+      <XAxis dataKey="name" className="text-sm" />
       <YAxis />
       <Tooltip
         wrapperStyle={{ backgroundColor: "#ccc" }}
