@@ -9,6 +9,7 @@ interface BarChartProps {
 
 const BarChartDisplay: React.FC<BarChartProps> = ({ data }) => {
   const order = useSelector((state: RootState) => state.categoryOrder.value);
+  const theme = useSelector((state: RootState) => state.theme.theme);
 
   const [sortedChartData, setSortedChartData] = useState<
     { name: string; value: number }[]
@@ -37,11 +38,15 @@ const BarChartDisplay: React.FC<BarChartProps> = ({ data }) => {
       <XAxis dataKey="name" className="text-sm" />
       <YAxis />
       <Tooltip
-        wrapperStyle={{ backgroundColor: "#ccc" }}
+        wrapperStyle={{ backgroundColor: "#000" }}
         formatter={(value: number) => [`${value} units`, ""]}
       />
-      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-      <Bar dataKey="value" barSize={30} className="bg-black" />
+      <CartesianGrid stroke="#FF512C" strokeDasharray="5 5" />
+      <Bar
+        dataKey="value"
+        barSize={30}
+        fill={theme !== "dark" ? "#98817C" : "#98817C"}
+      />
     </BarChart>
   );
 };

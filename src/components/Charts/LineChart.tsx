@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import {
   LineChart,
   Line,
@@ -8,6 +9,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import { RootState } from "../../redux/store";
 
 interface DayWiseData {
   date: string;
@@ -24,18 +26,19 @@ type LineChartProps = {
 };
 
 const LineChartDisplay: React.FC<LineChartProps> = ({ data, xAxisKey }) => {
+  const theme = useSelector((state: RootState) => state.theme.theme);
   return (
     <LineChart width={600} height={300} data={data}>
       <XAxis dataKey={xAxisKey} />
       <YAxis />
-      <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
+      <CartesianGrid stroke="#FF512C" strokeDasharray="5 5" />
       <Tooltip />
       <Legend />
       <Line
         type="monotone"
         dataKey="average_time"
-        name="Average Response Time"
-        stroke="#000"
+        name="Avg Response Time"
+        stroke={theme !== "dark" ? "#98817C" : "#98817C"}
         activeDot={{ r: 8 }}
       />
     </LineChart>

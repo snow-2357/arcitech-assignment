@@ -9,7 +9,7 @@ import ThemeToggle from "./components/ThemeToggle";
 import { apiData } from "./data";
 function App() {
   return (
-    <div className=" h-auto bg-gray-100 dark:bg-gray-700 flex flex-col gap-4 items-center ">
+    <div className="w-screen h-auto bg-gray-100 dark:bg-gray-700 flex flex-col gap-4 items-center overflow-x-hidden">
       <ThemeToggle />
       <BarChartWrapper />
       <LineChartWrapper />
