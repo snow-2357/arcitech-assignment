@@ -26,10 +26,21 @@ type LineChartProps = {
 };
 
 const LineChartDisplay: React.FC<LineChartProps> = ({ data, xAxisKey }) => {
+  const formatXAxis = (value: string) => {
+    if (xAxisKey === "date") {
+      const dateParts = value.split("-");
+      if (dateParts.length === 3) {
+        return `${dateParts[1]}-${dateParts[2]}`; // Extract month and day
+      }
+    }
+    return value;
+  };
+  // 2023-10-19 is toolong so i split the year
+
   const theme = useSelector((state: RootState) => state.theme.theme);
   return (
     <LineChart width={600} height={300} data={data}>
-      <XAxis dataKey={xAxisKey} />
+      <XAxis dataKey={xAxisKey} tickFormatter={formatXAxis} />
       <YAxis />
       <CartesianGrid stroke="#FF512C" strokeDasharray="5 5" />
       <Tooltip />
