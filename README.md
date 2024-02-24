@@ -62,6 +62,9 @@ Open your web browser and go to http://localhost:5173/ to view the application.
 - [Redux Toolkit](https://redux-toolkit.js.org/): The official, opinionated, batteries-included toolset for efficient Redux development.
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom designs.
 
+##### Video
+[Youtube](https://youtube.com/watch?v=Npa7CiLYFWU)
+
 ##### Bar Chart
 
 - This component receives category distribution data as props in the form of an object where keys represent category names and values represent corresponding counts.
