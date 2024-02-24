@@ -60,6 +60,7 @@ const PieChartComponent: React.FC<PieChartProps> = ({ data }) => {
           fill="#8884d8"
           dataKey="count"
         >
+          {/* Map data to pie slices and set colors */}
           {data.map((_entry, index) => (
             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           ))}

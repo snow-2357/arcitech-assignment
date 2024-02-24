@@ -29,7 +29,8 @@ const BarChartDisplay: React.FC<BarChartProps> = ({ data }) => {
         [...chartData].sort((a, b) => a.name.localeCompare(b.name))
       );
   }, [order, data]);
-  console.log(sortedChartData);
+  // For sorting the data based on the user input:
+  // 1 for increasing, -1 for decreasing, and 0 for sorting alphabetically.
 
   return (
     <BarChart width={600} height={300} data={sortedChartData}>

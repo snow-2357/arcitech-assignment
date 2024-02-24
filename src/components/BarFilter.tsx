@@ -13,19 +13,24 @@ const BarFilter: React.FC = () => {
     setOrderValue(1);
     dispatch(increase());
   };
+  // Handler for toggling increasing order
 
   const handleDecreasingToggle = () => {
     setOrderValue(-1);
     dispatch(decrees());
   };
+  // Handler for toggling decreasing order
+
   const handleSerialToggle = () => {
     setOrderValue(0);
     dispatch(serial());
   };
+  // // Handler for toggling serial order
 
   return (
     <div className="">
       <div className="flex items-center gap-4 mb-4 mx-12">
+        {/* Checkbox for increasing order */}
         <input
           checked={orderValue === 1}
           onChange={handleIncreasingToggle}
@@ -39,6 +44,7 @@ const BarFilter: React.FC = () => {
         >
           Increasing order
         </label>
+        {/* Checkbox for decreasing order */}
         <input
           checked={orderValue === -1}
           onChange={handleDecreasingToggle}
@@ -52,6 +58,7 @@ const BarFilter: React.FC = () => {
         >
           Decreasing order
         </label>
+        {/* Checkbox for serial order */}
         <input
           checked={orderValue === 0}
           onChange={handleSerialToggle}

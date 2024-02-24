@@ -27,6 +27,7 @@ export default function LineChartWrapper() {
       setData(apiData.response_times.day_wise as Data);
     }
   }, [timePeriod]);
+  // Fetch data based on the selected time period
 
   return (
     <>
